@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Community Events Board</title>
+    </head>
+    <body>
+      <h1>Community Events Board</h1>
+      <div class="event-list">
+        <ol>
+          {% for event in events %}
+            <li>{{ event.name}} - {{ event.date }} - {{event.type}}</li>
+          {% endfor %}
+        </ol>
+      </div>
+      <p>Click to clear data</p>
+      <a href="/deleteAll">Delete</a>
+    </body>
+</html>
