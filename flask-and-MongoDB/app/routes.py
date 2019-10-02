@@ -11,7 +11,6 @@ from flask import render_template, request, redirect
 
 
 from flask_pymongo import PyMongo
-
 # name of database on mongo db where all the data is sent
 app.config['MONGO_DBNAME'] = 'test'
 
@@ -21,6 +20,7 @@ mongo = PyMongo(app)
 
 # INDEX
 @app.route('/index')
+@app.route('/')
 def index():
     events = mongo.db.events
     #query to find everything in events
