@@ -6,12 +6,19 @@
   </head>
   <body>
     <h1>Tell me about your next event</h1>
+                <!-- input gets stored as event_name (this is referenced also in routes.py -->
+
     <form method = "post" action = "/results">
       <p>Event Name</p><br>
       <input type = "text" name = "event_name">
       <p>Event Date</p><br>
+                      <!-- input gets stored as event_date (this is referenced also in routes.py -->
+
       <input type="date" name="event_date">
       <p>Event Type</p><br>
+      
+                      <!-- input gets stored as event_type (this is referenced also in routes.py -->
+
       <input type="text" name="event_type">
       <br>
       <input type="submit">
