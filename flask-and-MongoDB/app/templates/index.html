@@ -6,15 +6,16 @@
       <h1>Community Events Board</h1>
       <div class="event-list">
         <ol>
-<!––for loop in order to display the inputed name, date and type as an ordered list ––>
-
+            
+            <!-- for loop in order to display the inputed name, date and type as an ordered list -->
           {% for event in events %}
             <li>{{ event.name}} - {{ event.date }} - {{event.type}}</li>
           {% endfor %}
         </ol>
       </div>
       <p>Click below to clear data</p>
-  <!––when the user clicks on delete, the website is redirected to deleteall ––>
+        <!-- when the user clicks on delete, the website is redirected to deleteall -->
+
       <a href="/deleteAll">Delete</a>
 
       <p>Click below to input data</p>
